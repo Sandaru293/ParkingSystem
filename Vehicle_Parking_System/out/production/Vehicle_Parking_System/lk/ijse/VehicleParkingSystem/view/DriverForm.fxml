@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.VehicleParkingSystem.controller.DriverFormController">
+   <children>
+      <TextField fx:id="txtName" layoutX="200.0" layoutY="44.0" />
+      <TextField fx:id="txtNic" layoutX="200.0" layoutY="105.0" />
+      <TextField fx:id="txtLicenseNo" layoutX="200.0" layoutY="162.0" />
+      <TextField fx:id="txtAddress" layoutX="200.0" layoutY="223.0" />
+      <TextField fx:id="txtContact" layoutX="200.0" layoutY="288.0" />
+      <Button layoutX="392.0" layoutY="346.0" mnemonicParsing="false" onAction="#btnAddDriverOnAction" text="Add Driver" />
+      <Label layoutX="21.0" layoutY="49.0" prefHeight="21.0" prefWidth="126.0" text="Name" />
+      <Label layoutX="21.0" layoutY="110.0" prefHeight="21.0" prefWidth="126.0" text="NIC" />
+      <Label layoutX="21.0" layoutY="167.0" prefHeight="21.0" prefWidth="126.0" text="Lices No" />
+      <Label layoutX="21.0" layoutY="228.0" prefHeight="21.0" prefWidth="126.0" text="Address" />
+      <Label layoutX="21.0" layoutY="293.0" prefHeight="21.0" prefWidth="126.0" text="Contact No" />
+   </children>
+</AnchorPane>

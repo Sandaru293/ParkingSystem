@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.VehicleParkingSystem.controller.DashBoardFromController">
+   <children>
+      <Label layoutX="245.0" layoutY="29.0" text="DashBoard Form">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Label>
+      <ComboBox fx:id="cmbVehNumber" layoutX="151.0" layoutY="95.0" onAction="#cmbVehNumberOnAction" prefWidth="150.0" />
+      <ComboBox fx:id="cmbName" layoutX="151.0" layoutY="231.0" onAction="#cmbNameOnAction" prefWidth="150.0" />
+      <Label layoutX="28.0" layoutY="100.0" text="Select Vehicle" />
+      <Label layoutX="28.0" layoutY="236.0" text="Driver" />
+      <TextField fx:id="txtVehType" layoutX="152.0" layoutY="160.0" prefHeight="31.0" prefWidth="150.0" />
+      <Label layoutX="28.0" layoutY="165.0" text="Vehicle Type" />
+      <Label fx:id="lblTime" layoutX="405.0" layoutY="90.0" prefHeight="60.0" prefWidth="123.0" text="Time">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font></Label>
+      <Button layoutX="379.0" layoutY="160.0" mnemonicParsing="false" onAction="#btnParkingOnAction" prefHeight="31.0" prefWidth="150.0" text="Park Vehicle" />
+      <Button layoutX="379.0" layoutY="231.0" mnemonicParsing="false" onAction="#btnDiliveryOnAction" prefHeight="31.0" prefWidth="150.0" text="On Dilivery Shift" />
+      <Label fx:id="lblParkSlot" layoutX="71.0" layoutY="298.0" prefHeight="60.0" prefWidth="107.0" text="Your Parking Solt Number" />
+      <Button layoutX="379.0" layoutY="316.0" mnemonicParsing="false" onAction="#btnManageOnAction" prefHeight="31.0" prefWidth="150.0" text="Management Log" />
+      <Label fx:id="lblDate" layoutX="379.0" layoutY="85.0" prefHeight="5.0" prefWidth="123.0" text="Date" />
+      <TextField fx:id="txtNic" layoutX="152.0" layoutY="262.0" prefHeight="31.0" prefWidth="150.0" />
+      <TextField fx:id="txtParkSlot" layoutX="112.0" layoutY="356.0" />
+   </children>
+</AnchorPane>

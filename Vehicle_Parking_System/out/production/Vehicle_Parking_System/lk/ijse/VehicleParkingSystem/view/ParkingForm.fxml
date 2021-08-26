@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.VehicleParkingSystem.controller.ParkingFormController">
+   <children>
+      <Label layoutX="245.0" layoutY="28.0" text="Parking Form" />
+      <Button layoutX="290.0" layoutY="70.0" mnemonicParsing="false" onAction="#btnVehicleFormOnAction" text="Add Vehicle" />
+      <Button layoutX="405.0" layoutY="70.0" mnemonicParsing="false" onAction="#btnDriverFormOnAction" text="Add Driver" />
+      <Button layoutX="504.0" layoutY="70.0" mnemonicParsing="false" onAction="#btnLogOutOnAction" text="Log Out" />
+      <Button layoutX="33.0" layoutY="70.0" mnemonicParsing="false" onAction="#btnOnDeliveryOnAction" text="On Delivery" />
+      <TableView fx:id="tblParking" layoutX="45.0" layoutY="128.0" prefHeight="200.0" prefWidth="517.0">
+        <columns>
+          <TableColumn fx:id="clmVehNumber" prefWidth="132.0" text="Vehicle Number" />
+          <TableColumn fx:id="clmVehType" prefWidth="134.0" text="Vehicle Type" />
+            <TableColumn fx:id="clmParkSlot" prefWidth="99.0" text="Parking Slot" />
+            <TableColumn fx:id="clmParkTime" prefWidth="151.0" text="Parking Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
